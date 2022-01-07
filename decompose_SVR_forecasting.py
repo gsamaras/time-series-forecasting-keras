@@ -10,7 +10,7 @@ def decompose_SVR_forecasting(ts, dataset, freq, lag, C=0.1, epsilon=0.01):
     # 序列分解
     trend, seasonal, residual = decompose.ts_decompose(ts, freq=freq)
     print("trend shape:", trend.shape)
-    print("peroid shape:", seasonal.shape)
+    print("period shape:", seasonal.shape)
     print("residual shape:", residual.shape)
 
     # 分别预测
